@@ -1,6 +1,5 @@
 {
   "name": "GenerateYearlyReport",
-  "projectId": "950d6f0c-ecaa-4824-9012-f1c67660aebe",
   "description": "Robotic Enterprise Framework",
   "main": "Main.xaml",
   "dependencies": {
@@ -21,7 +20,6 @@
     "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
-    "workflowSerialization": "DataContract",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
@@ -29,8 +27,7 @@
     "executionType": "Workflow",
     "readyForPiP": false,
     "startsInPiP": false,
-    "mustRestoreAllDependencies": true,
-    "pipType": "ChildSession"
+    "mustRestoreAllDependencies": true
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -47,48 +44,40 @@
         "editingStatus": "InProgress",
         "testCaseId": "f3467dc6-b792-4de7-9250-5ef27f2007ef",
         "dataVariationFilePath": ".variations\\Tests_Tests.json",
-        "testCaseType": "TestCase",
         "fileName": "Tests\\GeneralTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
         "testCaseId": "3f1dbcd0-2585-44a8-9643-98c18ae19b8e",
-        "testCaseType": "TestCase",
         "fileName": "Tests\\GetTransactionDataTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
         "testCaseId": "ff8a39da-19f8-4636-bc0e-23108ef91cae",
-        "testCaseType": "TestCase",
         "fileName": "Tests\\InitAllApplicationsTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
         "testCaseId": "7b0a1d77-2fce-4e10-aa2d-5187629470c5",
-        "testCaseType": "TestCase",
         "fileName": "Tests\\InitAllSettingsTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
         "testCaseId": "888723c0-f993-4974-a36c-a7575946b4a8",
-        "testCaseType": "TestCase",
         "fileName": "Tests\\MainTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
         "testCaseId": "cfbf740f-4423-4023-a306-98e8cb529f92",
-        "testCaseType": "TestCase",
         "fileName": "Tests\\ProcessTestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
         "testCaseId": "9ce3eec1-e939-41cb-8bbb-02654ea7e4ef",
-        "testCaseType": "TestCase",
         "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
       }
     ],
-    "modernBehavior": false,
-    "saveToCloud": false
+    "modernBehavior": false
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [

@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1107.33333333333,2981.33333333333</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1107.33333333333,2980</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>FillDownloadReportForm_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="28">
@@ -74,10 +74,9 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="FillDownloadReportForm" sap:VirtualizedContainerService.HintSize="1117.33333333333,2916.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="FillDownloadReportForm" sap:VirtualizedContainerService.HintSize="1117.33333333333,2915.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:List(x:String)" Name="PathsList" />
     </Sequence.Variables>
@@ -86,24 +85,24 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1075.33333333333,2824.66666666667" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1075.33333333333,2823.33333333333" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="1036.66666666667,2590" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3" RetryInterval="00:00:03">
+        <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="1036.66666666667,2588.66666666667" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3" RetryInterval="00:00:03">
           <ui:RetryScope.ActivityBody>
             <ActivityAction>
-              <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="994.666666666667,2414" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="994.666666666667,2412.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe ACME'" sap:VirtualizedContainerService.HintSize="952.666666666667,2322" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="fee95da0c3dfd70008b2b7b38b6c87d6" Selector="&lt;html app='msedge.exe' title='ACME System 1 - Download Monthly Report' /&gt;">
+                <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe ACME'" sap:VirtualizedContainerService.HintSize="952.666666666667,2320.66666666667" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="fee95da0c3dfd70008b2b7b38b6c87d6" Selector="&lt;html app='msedge.exe' title='ACME System 1 - Download Monthly Report' /&gt;">
                   <ui:BrowserScope.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="918.666666666667,2176" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="918.666666666667,2174.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="s:String[]" Name="Months" />
                           <Variable x:TypeArguments="x:Int32" Name="MonthIndex" />
@@ -142,13 +141,13 @@
                             <InArgument x:TypeArguments="scg:List(x:String)">[new List(of String)]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <ui:ForEach x:TypeArguments="x:String" CurrentIndex="[MonthIndex]" DisplayName="For Each month in year" sap:VirtualizedContainerService.HintSize="876.666666666667,1774.66666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Months]">
+                        <ui:ForEach x:TypeArguments="x:String" CurrentIndex="[MonthIndex]" DisplayName="For Each month in year" sap:VirtualizedContainerService.HintSize="876.666666666667,1774" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Months]">
                           <ui:ForEach.Body>
                             <ActivityAction x:TypeArguments="x:String">
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="x:String" Name="item" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="840,1650.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="840,1650" sap2010:WorkflowViewState.IdRef="Sequence_2">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:String" Name="DownloadedFilePath" />
                                   <Variable x:TypeArguments="x:Boolean" Name="NoReportFound" />
@@ -282,7 +281,7 @@
                                 </ui:Click>
                                 <ui:UiElementExists DisplayName="Element Exists - report message exists" Exists="[NoReportFound]" sap:VirtualizedContainerService.HintSize="798,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
                                   <ui:UiElementExists.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fe860959-ed7c-445a-ae61-38d1899d1948" InformativeScreenshot="557f1dba265b8bb16a273fdbda1626a3" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='ACME System 1 - Download Monthly Report - Work - Microsoft​ Edge' /&gt;&lt;ctrl name='acme-test.uipath.com says' role='dialog' /&gt;&lt;ctrl name='No report found for this vendor / month / year that you have spe*' role='text' /&gt;" TimeoutMS="7000" WaitForReady="COMPLETE" />
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fe860959-ed7c-445a-ae61-38d1899d1948" InformativeScreenshot="557f1dba265b8bb16a273fdbda1626a3" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='ACME System 1 - Download Monthly Report *' /&gt;&lt;ctrl name='acme-test.uipath.com says' role='dialog' /&gt;&lt;ctrl name='No report found for this vendor / month / year that you have spe*' role='text' /&gt;" TimeoutMS="7000" WaitForReady="COMPLETE" />
                                   </ui:UiElementExists.Target>
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -291,7 +290,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:UiElementExists>
-                                <If Condition="[NoReportFound]" DisplayName="If report message was found" sap:VirtualizedContainerService.HintSize="798,508.666666666667" sap2010:WorkflowViewState.IdRef="If_1">
+                                <If Condition="[NoReportFound]" DisplayName="If report message was found" sap:VirtualizedContainerService.HintSize="798,508" sap2010:WorkflowViewState.IdRef="If_1">
                                   <If.Then>
                                     <Sequence sap:VirtualizedContainerService.HintSize="376,341.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_5">
                                       <sap:WorkflowViewStateService.ViewState>
@@ -315,13 +314,13 @@
                                     </Sequence>
                                   </If.Then>
                                   <If.Else>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="376,349.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                    <Sequence sap:VirtualizedContainerService.HintSize="376,348.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_6">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <Assign sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                      <Assign sap:VirtualizedContainerService.HintSize="334,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_4">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="x:String">[DownloadedFilePath]</OutArgument>
                                         </Assign.To>
@@ -338,7 +337,7 @@
                             </ActivityAction>
                           </ui:ForEach.Body>
                         </ui:ForEach>
-                        <Assign sap:VirtualizedContainerService.HintSize="876.666666666667,62" sap2010:WorkflowViewState.IdRef="Assign_3">
+                        <Assign sap:VirtualizedContainerService.HintSize="876.666666666667,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_3">
                           <Assign.To>
                             <OutArgument x:TypeArguments="s:String[]">[out_PathsList]</OutArgument>
                           </Assign.To>
